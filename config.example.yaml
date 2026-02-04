@@ -1,0 +1,28 @@
+clob:
+  host: "https://clob.polymarket.com"
+  chain_id: 137
+
+discovery:
+  max_markets: 200
+  min_volume_usd: 1000
+  exclude_keywords: ["test", "demo"]
+  include_keywords: []
+  categories: []
+  min_liquidity: 0
+  only_active: true
+
+trading:
+  fee_bps: 100
+  slippage_bps: 50
+  min_edge_bps: 20
+  min_order_size: 5
+  max_notional_per_trade: 200
+  max_daily_notional: 2000
+  max_open_orders: 10
+  cooldown_ms_per_market: 30000
+  max_slippage_live_bps: 150
+  cancel_on_shutdown: true
+
+logging:
+  level: "INFO"
+  jsonl: true
